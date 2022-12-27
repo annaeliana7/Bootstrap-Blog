@@ -1,0 +1,106 @@
+body {
+  font-family: Poppins, sans-serif;
+  position: relative !important;
+  /* background-color: rgba(196, 180, 212, 0.064); */
+  margin: 0 auto;
+}
+
+.dark-blue {
+  color: #344563 !important;
+}
+
+.nav-link:hover {
+  color: #0b1e3f !important;
+}
+
+.nav-item .active {
+  background: #344563 !important;
+  color: #fff !important;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: #fff;
+}
+
+header .navbar {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 1rem!important;
+  margin-top: 3rem;
+}
+
+.btn-primary:hover {
+  background-color: rgb(130, 90, 179);
+}
+
+.btn-primary {
+background-color: rgb(196, 180, 212);
+border: rgb(196, 180, 212);
+}
+
+.btn.btn-primary.m-2:hover {
+  background-color: rgb(130, 90, 179);
+}
+
+li {
+  list-style: none;
+}
+
+#intro {
+  margin-top: 150px; /* Adjust this value to match the height of your navbar */
+}
+
+#intro h1 {
+  margin: 0; /* Removes the default margin applied by the browser */
+  margin-bottom: 0; /* Removes the space between h1 and p elements */
+  font-size: 50px;
+}
+
+#intro p {
+  margin: 0; /* Removes the default margin applied by the browser */
+  margin-top: 0; /* Removes the space between h1 and p elements */
+  font-size: 25px;
+  font-style: inherit;
+}
+
+.card {
+  background-color:rgb(196, 180, 212);
+  padding: 25px;
+  margin: 20px;
+  margin-top: 0;
+}
+
+.py-5 {
+  padding-bottom: 0.3rem!important;
+}
+
+@media screen and (min-width: 768px) {
+  .headline_section {
+    min-height: 916px !important;
+    background-size: contain;
+  }
+}

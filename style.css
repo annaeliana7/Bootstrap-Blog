@@ -48,6 +48,12 @@ header .navbar {
   margin-left: 20px;
 }
 
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .mb-3 {
   margin-bottom: 1rem!important;
   margin-top: 3rem;

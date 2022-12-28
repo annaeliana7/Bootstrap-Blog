@@ -11,7 +11,7 @@
   $hover-background:
   if(
     $color == $color-contrast-light,
-      shade-color($background, $btn-hover-bg-shade-amount),
+    shade-color($background, $btn-hover-bg-shade-amount),
       tint-color($background, $btn-hover-bg-tint-amount)
     ),
   $hover-border:

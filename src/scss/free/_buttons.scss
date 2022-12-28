@@ -20,7 +20,9 @@
   text-transform: uppercase;
   vertical-align: bottom;
   border: 0;
+
   @include border-radius(var(--#{$prefix}btn-border-radius));
+
   box-shadow: var(--#{$prefix}btn-box-shadow);
 
   :not(.btn-check) + &:hover,
@@ -68,7 +70,8 @@
   --#{$prefix}btn-line-height: #{$btn-line-height};
   // scss-docs-end btn-outline-css-vars
 
-  padding: var(--#{$prefix}btn-padding-top) var(--#{$prefix}btn-padding-x)
+  padding:
+    var(--#{$prefix}btn-padding-top) var(--#{$prefix}btn-padding-x)
     var(--#{$prefix}btn-padding-bottom);
   border-width: var(--#{$prefix}btn-border-width);
   border-style: solid;
@@ -186,21 +189,24 @@
     &:first-child:hover,
     &:focus-visible,
     &:hover {
-      box-shadow: $btn-contextual-box-shadow-state-first-part
-          rgba(map-get($value, shadow-color), 0.3),
+      box-shadow:
+        $btn-contextual-box-shadow-state-first-part
+        rgba(map-get($value, shadow-color), 0.3),
         $btn-contextual-box-shadow-state-second-part rgba(map-get($value, shadow-color), 0.2);
     }
 
     .btn-check:focus-visible + &,
     .btn-check:focus + &,
     &:focus {
-      box-shadow: $btn-contextual-box-shadow-state-first-part
-          rgba(map-get($value, shadow-color), 0.3),
+      box-shadow:
+        $btn-contextual-box-shadow-state-first-part
+        rgba(map-get($value, shadow-color), 0.3),
         $btn-contextual-box-shadow-state-second-part rgba(map-get($value, shadow-color), 0.2);
-      background-color: shade-color(
-        map-get($value, 'background-color'),
-        $btn-focus-bg-shade-amount
-      );
+      background-color:
+        shade-color(
+          map-get($value, 'background-color'),
+          $btn-focus-bg-shade-amount
+        );
     }
 
     .btn-check:checked + &,
@@ -208,21 +214,24 @@
     &:active,
     &.active,
     &.show {
-      box-shadow: $btn-contextual-box-shadow-state-first-part
-          rgba(map-get($value, shadow-color), 0.3),
+      box-shadow:
+        $btn-contextual-box-shadow-state-first-part
+        rgba(map-get($value, shadow-color), 0.3),
         $btn-contextual-box-shadow-state-second-part rgba(map-get($value, shadow-color), 0.2);
 
       &:focus {
-        box-shadow: $btn-contextual-box-shadow-state-first-part
-            rgba(map-get($value, shadow-color), 0.3),
+        box-shadow:
+          $btn-contextual-box-shadow-state-first-part
+          rgba(map-get($value, shadow-color), 0.3),
           $btn-contextual-box-shadow-state-second-part rgba(map-get($value, shadow-color), 0.2);
       }
 
       &:hover {
-        background-color: shade-color(
-          map-get($value, 'background-color'),
-          $btn-active-bg-shade-amount
-        );
+        background-color:
+          shade-color(
+            map-get($value, 'background-color'),
+            $btn-active-bg-shade-amount
+          );
       }
     }
 
@@ -345,8 +354,8 @@
   --#{$prefix}btn-disabled-color: #{$btn-link-disabled-color};
   --#{$prefix}btn-box-shadow: none;
 
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
   text-decoration: $link-decoration;
   box-shadow: var(--#{$prefix}btn-box-shadow);
 
@@ -536,7 +545,8 @@
   display: flex;
   flex-flow: column-reverse nowrap;
   align-items: center;
-  padding: var(--#{$prefix}btn-padding-top) var(--#{$prefix}btn-padding-x)
+  padding:
+    var(--#{$prefix}btn-padding-top) var(--#{$prefix}btn-padding-x)
     var(--#{$prefix}btn-padding-bottom);
   margin-bottom: 0;
   height: auto;

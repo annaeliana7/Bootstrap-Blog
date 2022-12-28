@@ -29,6 +29,7 @@
   // No need to set list-style: none; since .list-group-item is block level
   padding-left: 0; // reset padding because ul and ol
   margin-bottom: 0;
+
   @include border-radius(var(--#{$prefix}list-group-border-radius));
 }
 
@@ -109,9 +110,11 @@
     border-top-width: 0;
 
     &.active {
-      margin-top: calc(
-        -1 * var(--#{$prefix}list-group-border-width)
-      ); // stylelint-disable-line function-disallowed-list
+      margin-top:
+        calc(
+          -1 * var(--#{$prefix}list-group-border-width)
+        ); // stylelint-disable-line function-disallowed-list
+
       border-top-width: var(--#{$prefix}list-group-border-width);
     }
   }
@@ -148,9 +151,11 @@
           border-left-width: 0;
 
           &.active {
-            margin-left: calc(
-              -1 * var(--#{$prefix}list-group-border-width)
-            ); // stylelint-disable-line function-disallowed-list
+            margin-left:
+              calc(
+                -1 * var(--#{$prefix}list-group-border-width)
+              ); // stylelint-disable-line function-disallowed-list
+
             border-left-width: var(--#{$prefix}list-group-border-width);
           }
         }
@@ -185,6 +190,7 @@
 @each $state, $value in $theme-colors {
   $list-group-variant-bg: shift-color($value, $list-group-item-bg-scale);
   $list-group-variant-color: shift-color($value, $list-group-item-color-scale);
+
   @if (contrast-ratio($list-group-variant-bg, $list-group-variant-color) < $min-contrast-ratio) {
     $list-group-variant-color: mix(
       $value,

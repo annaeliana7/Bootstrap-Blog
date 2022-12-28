@@ -14,6 +14,7 @@
   padding: $thumbnail-padding;
   background-color: $thumbnail-bg;
   border: $thumbnail-border-width solid $thumbnail-border-color;
+
   @include border-radius($thumbnail-border-radius);
   @include box-shadow($thumbnail-box-shadow);
 
@@ -37,5 +38,6 @@
 
 .figure-caption {
   @include font-size($figure-caption-font-size);
+
   color: $figure-caption-color;
 }

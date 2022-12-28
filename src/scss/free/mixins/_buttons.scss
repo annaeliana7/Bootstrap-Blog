@@ -45,7 +45,9 @@
   --#{$prefix}btn-padding-top: #{$padding-top};
   --#{$prefix}btn-padding-bottom: #{$padding-bottom};
   --#{$prefix}btn-padding-x: #{$padding-x};
+
   @include rfs($font-size, --#{$prefix}btn-font-size);
+
   --#{$prefix}btn-line-height: #{$line-height};
 }
 // scss-docs-end btn-size-mixin
@@ -55,6 +57,8 @@
   --#{$prefix}btn-padding-top: #{$padding-top};
   --#{$prefix}btn-padding-bottom: #{$padding-bottom};
   --#{$prefix}btn-padding-x: #{$padding-x};
+
   @include rfs($font-size, --#{$prefix}btn-font-size);
+
   --#{$prefix}btn-line-height: #{$line-height};
 }

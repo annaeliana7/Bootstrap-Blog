@@ -29,8 +29,10 @@
   > tbody > tr {
     transition: $table-hover-transition;
   }
+
   > tbody > tr:hover {
     --#{$prefix}table-accent-bg: transparent;
+
     background-color: var(--#{$prefix}table-hover-bg);
   }
 }

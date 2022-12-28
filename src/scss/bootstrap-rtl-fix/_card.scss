@@ -32,6 +32,7 @@
   background-color: var(--#{$prefix}card-bg);
   background-clip: border-box;
   border: var(--#{$prefix}card-border-width) solid var(--#{$prefix}card-border-color);
+
   @include border-radius(var(--#{$prefix}card-border-radius));
   @include box-shadow(var(--#{$prefix}card-box-shadow));
 
@@ -46,11 +47,13 @@
 
     &:first-child {
       border-top-width: 0;
+
       @include border-top-radius(var(--#{$prefix}card-inner-border-radius));
     }
 
     &:last-child {
       border-bottom-width: 0;
+
       @include border-bottom-radius(var(--#{$prefix}card-inner-border-radius));
     }
   }
@@ -76,9 +79,11 @@
 }
 
 .card-subtitle {
-  margin-top: calc(
-    -0.5 * var(--#{$prefix}card-title-spacer-y)
-  ); // stylelint-disable-line function-disallowed-list
+  margin-top:
+    calc(
+      -0.5 * var(--#{$prefix}card-title-spacer-y)
+    ); // stylelint-disable-line function-disallowed-list
+
   margin-bottom: 0;
 }
 
@@ -132,15 +137,21 @@
 //
 
 .card-header-tabs {
-  margin-right: calc(
-    -0.5 * var(--#{$prefix}card-cap-padding-x)
-  ); // stylelint-disable-line function-disallowed-list
-  margin-bottom: calc(
-    -1 * var(--#{$prefix}card-cap-padding-y)
-  ); // stylelint-disable-line function-disallowed-list
-  margin-left: calc(
-    -0.5 * var(--#{$prefix}card-cap-padding-x)
-  ); // stylelint-disable-line function-disallowed-list
+  margin-right:
+    calc(
+      -0.5 * var(--#{$prefix}card-cap-padding-x)
+    ); // stylelint-disable-line function-disallowed-list
+
+  margin-bottom:
+    calc(
+      -1 * var(--#{$prefix}card-cap-padding-y)
+    ); // stylelint-disable-line function-disallowed-list
+
+  margin-left:
+    calc(
+      -0.5 * var(--#{$prefix}card-cap-padding-x)
+    ); // stylelint-disable-line function-disallowed-list
+
   border-bottom: 0;
 
   .nav-link.active {
@@ -150,12 +161,15 @@
 }
 
 .card-header-pills {
-  margin-right: calc(
-    -0.5 * var(--#{$prefix}card-cap-padding-x)
-  ); // stylelint-disable-line function-disallowed-list
-  margin-left: calc(
-    -0.5 * var(--#{$prefix}card-cap-padding-x)
-  ); // stylelint-disable-line function-disallowed-list
+  margin-right:
+    calc(
+      -0.5 * var(--#{$prefix}card-cap-padding-x)
+    ); // stylelint-disable-line function-disallowed-list
+
+  margin-left:
+    calc(
+      -0.5 * var(--#{$prefix}card-cap-padding-x)
+    ); // stylelint-disable-line function-disallowed-list
 }
 
 // Card image
@@ -166,6 +180,7 @@
   bottom: 0;
   left: 0;
   padding: var(--#{$prefix}card-img-overlay-padding);
+
   @include border-radius(var(--#{$prefix}card-inner-border-radius));
 }
 
@@ -221,6 +236,7 @@
             // stylelint-disable-next-line property-disallowed-list
             border-top-right-radius: 0;
           }
+
           .card-img-bottom,
           .card-footer {
             // stylelint-disable-next-line property-disallowed-list
@@ -236,6 +252,7 @@
             // stylelint-disable-next-line property-disallowed-list
             border-top-left-radius: 0;
           }
+
           .card-img-bottom,
           .card-footer {
             // stylelint-disable-next-line property-disallowed-list

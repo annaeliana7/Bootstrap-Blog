@@ -8,7 +8,9 @@
     #{if(&, "&", "")}.is-#{$state} {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     #{if(&, "&", "")}.is-#{$state} {
       @content;
     }
@@ -22,13 +24,15 @@
   $tooltip-color: color-contrast($color),
   $tooltip-bg-color: rgba($color, $form-feedback-tooltip-opacity),
   $focus-box-shadow: 0 0 $input-btn-focus-blur $input-focus-width
-    rgba($color, $input-btn-focus-color-opacity)
+  rgba($color, $input-btn-focus-color-opacity)
 ) {
   .#{$state}-feedback {
     display: none;
     width: 100%;
     margin-top: $form-feedback-margin-top;
+
     @include font-size($form-feedback-font-size);
+
     font-style: $form-feedback-font-style;
     color: $color;
   }
@@ -41,10 +45,13 @@
     max-width: 100%; // Contain to parent when possible
     padding: $form-feedback-tooltip-padding-y $form-feedback-tooltip-padding-x;
     margin-top: 0.1rem;
+
     @include font-size($form-feedback-tooltip-font-size);
+
     line-height: $form-feedback-tooltip-line-height;
     color: $tooltip-color;
     background-color: $tooltip-bg-color;
+
     @include border-radius($form-feedback-tooltip-border-radius);
   }
 
@@ -130,6 +137,7 @@
       }
     }
   }
+
   .form-check-inline .form-check-input {
     ~ .#{$state}-feedback {
       margin-left: 0.5em;
@@ -143,7 +151,9 @@
       @include form-validation-state-selector($state) {
         @if $state == 'valid' {
           z-index: 3;
-        } @else if $state == 'invalid' {
+        }
+
+        @else if $state == 'invalid' {
           z-index: 4;
         }
       }

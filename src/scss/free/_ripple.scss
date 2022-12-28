@@ -18,6 +18,7 @@
   --#{$prefix}ripple-wave-active-transform: #{$ripple-wave-active-transform};
 
   @include ripple-variant(black);
+
   border-radius: var(--#{$prefix}ripple-wave-border-radius);
   opacity: var(--#{$prefix}ripple-wave-opacity);
   pointer-events: none;
@@ -25,9 +26,11 @@
   touch-action: none;
   transform: var(--#{$prefix}ripple-wave-transform);
   transition-property: transform, opacity;
-  transition-timing-function: var(--#{$prefix}ripple-wave-cubicBezier),
+  transition-timing-function:
+    var(--#{$prefix}ripple-wave-cubicBezier),
     var(--#{$prefix}ripple-wave-cubicBezier);
   z-index: var(--#{$prefix}ripple-wave-z-index);
+
   &.active {
     transform: var(--#{$prefix}ripple-wave-active-transform);
     opacity: 0;

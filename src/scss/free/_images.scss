@@ -32,6 +32,7 @@
 
     opacity: 0;
     transition: var(--#{$prefix}image-hover-transition);
+
     &:hover {
       opacity: 1;
     }
@@ -46,6 +47,7 @@
   video {
     transition: var(--#{$prefix}image-hover-zoom-transition);
   }
+
   &:hover {
     img,
     video {
@@ -61,6 +63,7 @@
   --#{$prefix}image-hover-shadow-transition: #{$image-hover-shadow-transition};
 
   transition: var(--#{$prefix}image-hover-shadow-transition);
+
   &:hover {
     transition: var(--#{$prefix}image-hover-shadow-transition);
   }
@@ -71,6 +74,7 @@
   --#{$prefix}image-hover-shadow-box-shadow: #{$image-hover-shadow-box-shadow};
 
   box-shadow: none;
+
   &:hover {
     box-shadow: var(--#{$prefix}image-hover-shadow-box-shadow);
   }
@@ -81,6 +85,7 @@
   --#{$prefix}image-hover-shadow-box-shadow-soft: #{$image-hover-shadow-box-shadow-soft};
 
   box-shadow: none;
+
   &:hover {
     box-shadow: var(--#{$prefix}image-hover-shadow-box-shadow-soft);
   }

@@ -16,6 +16,7 @@
 
       border-bottom-color: var(--#{$prefix}card-header-border-bottom-color);
     }
+
     .card-footer {
       --#{$prefix}card-footer-border-top-color: #{$card-border-color};
 
@@ -28,7 +29,8 @@
   --#{$prefix}card-header-border-width: #{$card-header-border-width};
   --#{$prefix}card-header-border-color: #{$card-header-border-color};
 
-  border-bottom: var(--#{$prefix}card-header-border-width) solid
+  border-bottom:
+    var(--#{$prefix}card-header-border-width) solid
     var(--#{$prefix}card-header-border-color);
 }
 
@@ -43,7 +45,8 @@
   --#{$prefix}card-footer-border-color: #{$card-footer-border-color};
   --#{$prefix}card-footer-border-width: #{$card-footer-border-width};
 
-  border-top: var(--#{$prefix}card-footer-border-width) solid
+  border-top:
+    var(--#{$prefix}card-footer-border-width) solid
     var(--#{$prefix}card-footer-border-color);
 }
 

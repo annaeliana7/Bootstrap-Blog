@@ -5,7 +5,9 @@
 @function set-notification-text-color($color) {
   @if (lightness($color) > 70) {
     @return $gray-800;
-  } @else {
+  }
+
+  @else {
     @return $white;
   }
 }

@@ -5,6 +5,7 @@
 .carousel-control-prev-icon {
   &::after {
     content: '\f053';
+
     --#{$prefix}carousel-control-icon-font-size: #{$carousel-control-icon-font-size};
     --#{$prefix}carousel-control-icon-font-weight: #{$font-weight-bold};
 
@@ -13,9 +14,11 @@
     font-family: 'Font Awesome 6 Pro', 'Font Awesome 6 Free';
   }
 }
+
 .carousel-control-next-icon {
   &::after {
     content: '\f054';
+
     --#{$prefix}carousel-control-icon-font-size: #{$carousel-control-icon-font-size};
     --#{$prefix}carousel-control-icon-font-weight: #{$font-weight-bold};
 
@@ -24,6 +27,7 @@
     font-family: 'Font Awesome 6 Pro', 'Font Awesome 6 Free';
   }
 }
+
 .carousel-indicators {
   [data-mdb-target] {
     @extend [data-bs-target] !optional;

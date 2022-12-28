@@ -9,8 +9,8 @@
   $border,
   $color: color-contrast($background),
   $hover-background:
-    if(
-      $color == $color-contrast-light,
+  if(
+    $color == $color-contrast-light,
       shade-color($background, $btn-hover-bg-shade-amount),
       tint-color($background, $btn-hover-bg-tint-amount)
     ),
@@ -84,7 +84,9 @@
 @mixin button-size($padding-y, $padding-x, $font-size, $border-radius) {
   --#{$prefix}btn-padding-y: #{$padding-y};
   --#{$prefix}btn-padding-x: #{$padding-x};
+
   @include rfs($font-size, --#{$prefix}btn-font-size);
+
   --#{$prefix}btn-border-radius: #{$border-radius};
 }
 // scss-docs-end btn-size-mixin

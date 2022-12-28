@@ -8,6 +8,7 @@
   padding: var(--#{$prefix}note-padding);
   border-left: var(--#{$prefix}note-border-width) solid;
   border-radius: var(--#{$prefix}note-border-radius);
+
   strong {
     font-weight: var(--#{$prefix}note-strong-font-weight);
   }

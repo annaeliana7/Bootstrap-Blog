@@ -2,5 +2,11 @@
   "name": "mdb-standard-app",
   "version": "6.0.1",
   "homepage": "https://mdbootstrap.com/docs/standard/",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
 }

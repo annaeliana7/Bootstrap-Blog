@@ -35,19 +35,25 @@
   align-items: center;
   width: 100%;
   padding: var(--#{$prefix}accordion-btn-padding-y) var(--#{$prefix}accordion-btn-padding-x);
+
   @include font-size($font-size-base);
+
   color: var(--#{$prefix}accordion-btn-color);
   text-align: left; // Reset button style
   background-color: var(--#{$prefix}accordion-btn-bg);
   border: 0;
+
   @include border-radius(0);
+
   overflow-anchor: none;
+
   @include transition(var(--#{$prefix}accordion-transition));
 
   &:not(.collapsed) {
     color: var(--#{$prefix}accordion-active-color);
     background-color: var(--#{$prefix}accordion-active-bg);
-    box-shadow: inset 0 calc(-1 * var(--#{$prefix}accordion-border-width)) 0
+    box-shadow:
+      inset 0 calc(-1 * var(--#{$prefix}accordion-border-width)) 0
       var(--#{$prefix}accordion-border-color); // stylelint-disable-line function-disallowed-list
 
     &::after {
@@ -66,6 +72,7 @@
     background-image: var(--#{$prefix}accordion-btn-icon);
     background-repeat: no-repeat;
     background-size: var(--#{$prefix}accordion-btn-icon-width);
+
     @include transition(var(--#{$prefix}accordion-btn-icon-transition));
   }
 
@@ -134,11 +141,13 @@
   .accordion-item {
     border-right: 0;
     border-left: 0;
+
     @include border-radius(0);
 
     &:first-child {
       border-top: 0;
     }
+
     &:last-child {
       border-bottom: 0;
     }

@@ -27,22 +27,27 @@
     padding: var(--#{$prefix}list-group-light-item-py) 0;
     border: var(--#{$prefix}list-group-light-item-border);
   }
+
   > .list-group-item {
     border-width: 0 0 var(--#{$prefix}list-group-light-item-border-width);
+
     &:last-of-type {
       border: none;
     }
   }
+
   .active {
     border: none;
     border-radius: var(--#{$prefix}list-group-light-active-border-radius);
     background-color: var(--#{$prefix}list-group-light-active-bg);
     color: var(--#{$prefix}list-group-light-active-color);
   }
+
   .list-group-item-action {
     &:hover {
       border-radius: var(--#{$prefix}list-group-light-active-border-radius);
     }
+
     &:focus {
       border-radius: var(--#{$prefix}list-group-light-active-border-radius);
     }
@@ -51,6 +56,7 @@
 
 .list-group-small {
   --#{$prefix}list-group-small-item-py: #{$list-group-small-item-py};
+
   .list-group-item {
     padding: var(--#{$prefix}list-group-small-item-py) 0;
   }

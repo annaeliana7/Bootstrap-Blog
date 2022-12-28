@@ -13,6 +13,7 @@
 }
 
 .popover-header {
-  border-bottom: var(--#{$prefix}popover-border-bottom-width) solid
+  border-bottom:
+    var(--#{$prefix}popover-border-bottom-width) solid
     var(--#{$prefix}popover-border-color);
 }

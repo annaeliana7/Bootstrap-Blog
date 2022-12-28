@@ -103,6 +103,7 @@
 .table-striped {
   > tbody > tr:nth-of-type(#{$table-striped-order}) > * {
     --#{$prefix}table-accent-bg: var(--#{$prefix}table-striped-bg);
+
     color: var(--#{$prefix}table-striped-color);
   }
 }
@@ -111,6 +112,7 @@
 .table-striped-columns {
   > :not(caption) > tr > :nth-child(#{$table-striped-columns-order}) {
     --#{$prefix}table-accent-bg: var(--#{$prefix}table-striped-bg);
+
     color: var(--#{$prefix}table-striped-color);
   }
 }
@@ -121,6 +123,7 @@
 
 .table-active {
   --#{$prefix}table-accent-bg: var(--#{$prefix}table-active-bg);
+
   color: var(--#{$prefix}table-active-color);
 }
 
@@ -131,6 +134,7 @@
 .table-hover {
   > tbody > tr:hover > * {
     --#{$prefix}table-accent-bg: var(--#{$prefix}table-hover-bg);
+
     color: var(--#{$prefix}table-hover-color);
   }
 }

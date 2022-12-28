@@ -26,7 +26,7 @@
       }
 
       + .breadcrumb-item {
-        &:before {
+        &::before {
           color: var(--#{$prefix}breadcrumb-item-before-color);
         }
       }

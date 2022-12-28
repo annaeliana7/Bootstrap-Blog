@@ -28,7 +28,7 @@
     transform-origin: bottom;
     transition: var(--#{$prefix}range-thumb-transition);
 
-    &:after {
+    &::after {
       position: absolute;
       display: block;
       content: '';

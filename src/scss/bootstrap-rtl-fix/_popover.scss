@@ -2,7 +2,9 @@
   // scss-docs-start popover-css-vars
   --#{$prefix}popover-zindex: #{$zindex-popover};
   --#{$prefix}popover-max-width: #{$popover-max-width};
+
   @include rfs($popover-font-size, --#{$prefix}popover-font-size);
+
   --#{$prefix}popover-bg: #{$popover-bg};
   --#{$prefix}popover-border-width: #{$popover-border-width};
   --#{$prefix}popover-border-color: #{$popover-border-color};
@@ -11,7 +13,9 @@
   --#{$prefix}popover-box-shadow: #{$popover-box-shadow};
   --#{$prefix}popover-header-padding-x: #{$popover-header-padding-x};
   --#{$prefix}popover-header-padding-y: #{$popover-header-padding-y};
+
   @include rfs($popover-header-font-size, --#{$prefix}popover-header-font-size);
+
   --#{$prefix}popover-header-color: #{$popover-header-color};
   --#{$prefix}popover-header-bg: #{$popover-header-bg};
   --#{$prefix}popover-body-padding-x: #{$popover-body-padding-x};
@@ -34,6 +38,7 @@
   background-color: var(--#{$prefix}popover-bg);
   background-clip: padding-box;
   border: var(--#{$prefix}popover-border-width) solid var(--#{$prefix}popover-border-color);
+
   @include border-radius(var(--#{$prefix}popover-border-radius));
   @include box-shadow(var(--#{$prefix}popover-box-shadow));
 
@@ -56,13 +61,15 @@
 
 .bs-popover-top {
   > .popover-arrow {
-    bottom: calc(
-      -1 * (var(--#{$prefix}popover-arrow-height)) - var(--#{$prefix}popover-border-width)
-    ); // stylelint-disable-line function-disallowed-list
+    bottom:
+      calc(
+        -1 * (var(--#{$prefix}popover-arrow-height)) - var(--#{$prefix}popover-border-width)
+      ); // stylelint-disable-line function-disallowed-list
 
     &::before,
     &::after {
-      border-width: var(--#{$prefix}popover-arrow-height)
+      border-width:
+        var(--#{$prefix}popover-arrow-height)
         calc(var(--#{$prefix}popover-arrow-width) * 0.5) 0; // stylelint-disable-line function-disallowed-list
     }
 
@@ -78,18 +85,21 @@
   }
 }
 
-/*!rtl:begin:ignore*/
+/* !rtl:begin:ignore */
 .bs-popover-end {
   > .popover-arrow {
-    left: calc(
-      -1 * (var(--#{$prefix}popover-arrow-height)) - var(--#{$prefix}popover-border-width)
-    ); // stylelint-disable-line function-disallowed-list
+    left:
+      calc(
+        -1 * (var(--#{$prefix}popover-arrow-height)) - var(--#{$prefix}popover-border-width)
+      ); // stylelint-disable-line function-disallowed-list
+
     width: var(--#{$prefix}popover-arrow-height);
     height: var(--#{$prefix}popover-arrow-width);
 
     &::before,
     &::after {
-      border-width: calc(var(--#{$prefix}popover-arrow-width) * 0.5)
+      border-width:
+        calc(var(--#{$prefix}popover-arrow-width) * 0.5)
         var(--#{$prefix}popover-arrow-height) calc(var(--#{$prefix}popover-arrow-width) * 0.5) 0; // stylelint-disable-line function-disallowed-list
     }
 
@@ -105,17 +115,19 @@
   }
 }
 
-/*!rtl:end:ignore*/
+/* !rtl:end:ignore */
 
 .bs-popover-bottom {
   > .popover-arrow {
-    top: calc(
-      -1 * (var(--#{$prefix}popover-arrow-height)) - var(--#{$prefix}popover-border-width)
-    ); // stylelint-disable-line function-disallowed-list
+    top:
+      calc(
+        -1 * (var(--#{$prefix}popover-arrow-height)) - var(--#{$prefix}popover-border-width)
+      ); // stylelint-disable-line function-disallowed-list
 
     &::before,
     &::after {
-      border-width: 0 calc(var(--#{$prefix}popover-arrow-width) * 0.5)
+      border-width:
+        0 calc(var(--#{$prefix}popover-arrow-width) * 0.5)
         var(--#{$prefix}popover-arrow-height); // stylelint-disable-line function-disallowed-list
     }
 
@@ -137,26 +149,31 @@
     left: 50%;
     display: block;
     width: var(--#{$prefix}popover-arrow-width);
-    margin-left: calc(
-      -0.5 * var(--#{$prefix}popover-arrow-width)
-    ); // stylelint-disable-line function-disallowed-list
+    margin-left:
+      calc(
+        -0.5 * var(--#{$prefix}popover-arrow-width)
+      ); // stylelint-disable-line function-disallowed-list
+
     content: '';
     border-bottom: var(--#{$prefix}popover-border-width) solid var(--#{$prefix}popover-header-bg);
   }
 }
 
-/*!rtl:begin:ignore*/
+/* !rtl:begin:ignore */
 .bs-popover-start {
   > .popover-arrow {
-    right: calc(
-      -1 * (var(--#{$prefix}popover-arrow-height)) - var(--#{$prefix}popover-border-width)
-    ); // stylelint-disable-line function-disallowed-list
+    right:
+      calc(
+        -1 * (var(--#{$prefix}popover-arrow-height)) - var(--#{$prefix}popover-border-width)
+      ); // stylelint-disable-line function-disallowed-list
+
     width: var(--#{$prefix}popover-arrow-height);
     height: var(--#{$prefix}popover-arrow-width);
 
     &::before,
     &::after {
-      border-width: calc(var(--#{$prefix}popover-arrow-width) * 0.5) 0
+      border-width:
+        calc(var(--#{$prefix}popover-arrow-width) * 0.5) 0
         calc(var(--#{$prefix}popover-arrow-width) * 0.5) var(--#{$prefix}popover-arrow-height); // stylelint-disable-line function-disallowed-list
     }
 
@@ -172,18 +189,21 @@
   }
 }
 
-/*!rtl:end:ignore*/
+/* !rtl:end:ignore */
 
 .bs-popover-auto {
   &[data-popper-placement^='top'] {
     @extend .bs-popover-top;
   }
+
   &[data-popper-placement^='right'] {
     @extend .bs-popover-end;
   }
+
   &[data-popper-placement^='bottom'] {
     @extend .bs-popover-bottom;
   }
+
   &[data-popper-placement^='left'] {
     @extend .bs-popover-start;
   }
@@ -193,10 +213,13 @@
 .popover-header {
   padding: var(--#{$prefix}popover-header-padding-y) var(--#{$prefix}popover-header-padding-x);
   margin-bottom: 0; // Reset the default from Reboot
+
   @include font-size(var(--#{$prefix}popover-header-font-size));
+
   color: var(--#{$prefix}popover-header-color);
   background-color: var(--#{$prefix}popover-header-bg);
   border-bottom: var(--#{$prefix}popover-border-width) solid var(--#{$prefix}popover-border-color);
+
   @include border-top-radius(var(--#{$prefix}popover-inner-border-radius));
 
   &:empty {

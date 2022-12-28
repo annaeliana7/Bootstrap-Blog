@@ -34,7 +34,8 @@
       box-shadow: none;
       color: var(--#{$prefix}scrollspy-menu-sidebar-active-color);
       font-weight: var(--#{$prefix}scrollspy-menu-sidebar-active-font-weight);
-      border-left: var(--#{$prefix}scrollspy-menu-sidebar-active-border-width) solid
+      border-left:
+        var(--#{$prefix}scrollspy-menu-sidebar-active-border-width) solid
         var(--#{$prefix}scrollspy-menu-sidebar-active-border-color);
       border-radius: 0;
     }

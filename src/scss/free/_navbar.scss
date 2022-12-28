@@ -27,6 +27,7 @@
 .navbar-brand {
   display: flex;
   align-items: center;
+
   img {
     margin-right: var(--#{$prefix}navbar-brand-img-margin-right);
   }

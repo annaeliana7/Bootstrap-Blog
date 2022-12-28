@@ -13,7 +13,7 @@
   background-color: $form-check-input-background-color;
   border: $form-check-input-border-width solid $form-check-input-border-color;
 
-  &:before {
+  &::before {
     content: '';
     position: absolute;
     box-shadow: $form-check-input-before-box-shadow;
@@ -29,7 +29,7 @@
   &:hover {
     cursor: pointer;
 
-    &:before {
+    &::before {
       opacity: $form-check-input-hover-before-opacity;
       box-shadow: $form-check-input-hover-before-box-shadow;
     }
@@ -40,7 +40,7 @@
     border-color: $form-check-input-focus-border-color;
     transition: $form-check-input-focus-transition;
 
-    &:before {
+    &::before {
       opacity: $form-check-input-focus-before-opacity;
       box-shadow: $form-check-input-focus-before-box-shadow;
       transform: $form-check-input-focus-before-transform;
@@ -51,11 +51,11 @@
   &:checked {
     border-color: $form-check-input-checked-border-color;
 
-    &:before {
+    &::before {
       opacity: $form-check-input-checked-before-opacity;
     }
 
-    &:after {
+    &::after {
       content: '';
       position: absolute;
     }
@@ -63,7 +63,7 @@
     &:focus {
       border-color: $form-check-input-checked-focus-border-color;
 
-      &:before {
+      &::before {
         box-shadow: $form-check-input-checked-focus-before-box-shadow;
         transform: $form-check-input-checked-focus-before-transform;
         transition: $form-check-input-checked-focus-before-transition;
@@ -73,7 +73,7 @@
 
   &:indeterminate {
     &:focus {
-      &:before {
+      &::before {
         box-shadow: $form-check-input-indeterminate-focus-before-box-shadow;
       }
     }
@@ -85,7 +85,7 @@
     margin-right: 6px;
 
     &:focus {
-      &:after {
+      &::after {
         content: '';
         position: absolute;
         width: $form-check-input-checkbox-focus-after-width;
@@ -101,7 +101,7 @@
       background-image: none;
       background-color: $form-check-input-checkbox-checked-background-color;
 
-      &:after {
+      &::after {
         display: block;
         transform: $form-check-input-checkbox-checked-after-transform #{'/*!rtl:ignore*/'};
         border-width: $form-check-input-checkbox-checked-after-border-width;
@@ -133,12 +133,12 @@
     margin-top: 0.125em;
     margin-right: 4px;
 
-    &:before {
+    &::before {
       width: $form-check-input-radio-before-width;
       height: $form-check-input-radio-before-height;
     }
 
-    &:after {
+    &::after {
       content: '';
       position: absolute;
       width: $form-check-input-radio-after-width;
@@ -153,7 +153,7 @@
       background-image: none;
       background-color: $form-check-input-radio-checked-background-color;
 
-      &:after {
+      &::after {
         border-radius: $form-check-input-radio-checked-after-border-radius;
         width: $form-check-input-radio-checked-after-width;
         height: $form-check-input-radio-checked-after-height;
@@ -175,6 +175,7 @@
 
 .form-check-label {
   padding-left: 0.15rem;
+
   &:hover {
     cursor: pointer;
   }
@@ -195,7 +196,7 @@
     margin-top: 0.3em;
     margin-right: 8px;
 
-    &:after {
+    &::after {
       content: '';
       position: absolute;
       border: none;
@@ -212,13 +213,13 @@
     &:focus {
       background-image: none;
 
-      &:before {
+      &::before {
         box-shadow: $form-switch-form-check-input-focus-before-box-shadow;
         transform: $form-switch-form-check-input-focus-before-transform;
         transition: $form-switch-form-check-input-focus-before-transition;
       }
 
-      &:after {
+      &::after {
         border-radius: $form-switch-form-check-input-focus-after-border-radius;
         width: $form-switch-form-check-input-focus-after-width;
         height: $form-switch-form-check-input-focus-after-height;
@@ -231,7 +232,7 @@
       &:focus {
         background-image: none;
 
-        &:before {
+        &::before {
           margin-left: $form-switch-form-check-input-checked-focus-before-margin-left;
           box-shadow: $form-switch-form-check-input-checked-focus-before-box-shadow;
           transform: $form-switch-form-check-input-checked-focus-before-transform;
@@ -242,7 +243,7 @@
       &[type='checkbox'] {
         background-image: none;
 
-        &:after {
+        &::after {
           content: '';
           position: absolute;
           border: none;

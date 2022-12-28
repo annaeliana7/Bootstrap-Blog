@@ -21,6 +21,7 @@
   .accordion-button:not(.collapsed) {
     box-shadow: var(--#{$prefix}accordion-flush-btn-box-shadow);
   }
+
   .accordion-item {
     border-bottom: var(--#{$prefix}accordion-flush-border-bottom);
   }
@@ -40,8 +41,10 @@
 
   .accordion-item {
     border: 0;
+
     .accordion-button {
       border-radius: var(--#{$prefix}accordion-borderless-btn-border-radius);
+
       &:not(.collapsed) {
         background-color: var(--#{$prefix}accordion-borderless-btn-bg);
         color: var(--#{$prefix}accordion-borderless-btn-color);

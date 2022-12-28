@@ -32,11 +32,12 @@
   $start-percent: null,
   $end-percent: null
 ) {
-  background-image: linear-gradient(
-    to bottom,
-    $start-color $start-percent,
-    $end-color $end-percent
-  );
+  background-image:
+    linear-gradient(
+      to bottom,
+      $start-color $start-percent,
+      $end-color $end-percent
+    );
 }
 
 @mixin gradient-directional($start-color: $gray-700, $end-color: $gray-800, $deg: 45deg) {
@@ -66,15 +67,16 @@
 }
 
 @mixin gradient-striped($color: rgba($white, 0.15), $angle: 45deg) {
-  background-image: linear-gradient(
-    $angle,
-    $color 25%,
-    transparent 25%,
-    transparent 50%,
-    $color 50%,
-    $color 75%,
-    transparent 75%,
-    transparent
-  );
+  background-image:
+    linear-gradient(
+      $angle,
+      $color 25%,
+      transparent 25%,
+      transparent 50%,
+      $color 50%,
+      $color 75%,
+      transparent 75%,
+      transparent
+    );
 }
 // scss-docs-end gradient-mixins

@@ -1,6 +1,7 @@
 body {
   font-family: Poppins, sans-serif;
   position: relative !important;
+
   /* background-color: rgba(196, 180, 212, 0.064); */
   margin: 0 auto;
 }
@@ -55,7 +56,7 @@ header .navbar {
 }
 
 .mb-3 {
-  margin-bottom: 1rem!important;
+  margin-bottom: 1rem !important;
   margin-top: 3rem;
 }
 
@@ -64,8 +65,8 @@ header .navbar {
 }
 
 .btn-primary {
-background-color: rgb(196, 180, 212);
-border: rgb(196, 180, 212);
+  background-color: rgb(196, 180, 212);
+  border: rgb(196, 180, 212);
 }
 
 .btn.btn-primary.m-2:hover {
@@ -94,14 +95,14 @@ li {
 }
 
 .card {
-  background-color:rgb(196, 180, 212);
+  background-color: rgb(196, 180, 212);
   padding: 25px;
   margin: 20px;
   margin-top: 0;
 }
 
 .py-5 {
-  padding-bottom: 0.3rem!important;
+  padding-bottom: 0.3rem !important;
 }
 
 @media screen and (min-width: 768px) {

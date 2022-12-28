@@ -54,7 +54,9 @@
 
         // Do not render anything if fluid and non fluid values are the same
         $value: if($val == rfs-fluid-value($value), null, $val);
-      } @else {
+      }
+
+      @else {
         $value: rfs-fluid-value($value);
       }
     }
@@ -65,7 +67,7 @@
 
     @if $value != null {
       @if $is-rtl == false {
-        /*!rtl:begin:remove*/
+        /* !rtl:begin:remove */
       }
 
       @if $is-css-var {
@@ -78,7 +80,9 @@
             --#{$prefix}#{$css-variable-name}: #{$value};
           }
         }
-      } @else {
+      }
+
+      @else {
         .#{$property-class + $infix + $property-class-modifier} {
           @each $property in $properties {
             @if $is-local-vars {
@@ -86,6 +90,7 @@
                 --#{$prefix}#{$local-var}: #{$variable};
               }
             }
+
             #{$property}: $value if($enable-important-utilities, !important, null);
           }
         }
@@ -98,6 +103,7 @@
                   --#{$prefix}#{$local-var}: #{$variable};
                 }
               }
+
               #{$property}: $value if($enable-important-utilities, !important, null);
             }
           }
@@ -105,7 +111,7 @@
       }
 
       @if $is-rtl == false {
-        /*!rtl:end:remove*/
+        /* !rtl:end:remove */
       }
     }
   }

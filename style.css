@@ -1,8 +1,6 @@
 body {
   font-family: Poppins, sans-serif;
   position: relative !important;
-
-  /* background-color: rgba(196, 180, 212, 0.064); */
   margin: 0 auto;
 }
 
@@ -94,6 +92,7 @@ li {
   font-style: inherit;
 }
 
+ /* background-color: rgba(196, 180, 212, 0.064); */
 .card {
   background-color: rgb(196, 180, 212);
   padding: 25px;
